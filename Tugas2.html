@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+
+	<form>
+
+		<h3>Form Biodata</h3>
+
+		<table cellpadding="10">
+
+			<tr>
+				<td><label for="nim">NIM</label></td>
+				<td>:</td>
+				<td><input type="text" name="nim" id="nim"></td>
+			</tr>
+
+			<tr>
+				<td><label for="nama">Nama</label></td>
+				<td>:</td>
+				<td><input type="text" name="nama" id="nama"></td>
+			</tr>				
+
+			<tr>
+				<td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+				<td>:</td>
+				<td><input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="P"> Pria
+					<input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="W"> Wanita
+				</td>
+			</tr>		
+
+			<tr>
+				<td><label for="jurusan">Jurusan</label></td>
+				<td>:</td>
+				<td>
+					<select>
+						<option id="jurusan">Pilih</option>
+						<option>D3 SI</option>
+						<option>D3 DKV</option>
+						<option>S1 Ilkom</option>
+						<option>S1 RPL</option>
+					</select>
+				</td>					
+			</tr>		
+
+			<tr>
+				<td><label>Hobi</label></td>
+				<td>:</td>
+				<td>
+					<input type="checkbox" name="komputer" id="komputer"><label for="musik">Komputer</label>
+					<input type="checkbox" name="musik" id="musik"><label for="musik">Musik</label>
+					<input type="checkbox" name="olahraga" id="olahraga"><label for="olahraga">Olahraga</label>
+					<input type="checkbox" name="traveling" id="traveling"><label for="traveling">Traveling</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label for="catatan">Catatan</label></td>
+				<td>:</td>
+				<td><textarea id="catatan" name="catatan" cols="40" rows="5"></textarea></td>
+			</tr>
+
+			<tr>
+				<td><label>Foto</label></td>
+				<td>:</td>
+				<td>
+					<input type="file" id="pic" name="pic" style="display:none" onchange="document.getElementById('filename').value=this value">
+					<input type="button" value="Choose File" onclick="document.getElementById('pic').click()">
+				</td>
+			</tr>
+
+			<tr>
+				<td><label for="email">Email</label></td>
+				<td>:</td>
+				<td><input type="text" name="email" id="email"></td>
+			</tr>
+
+			<tr>
+				<td><label for="password">Sandi Login</label></td>
+				<td>:</td>
+				<td><input type="password" name="password" id="password"></td>
+			</tr>
+
+			<tr>
+				<td><label for="ulang_password">Ulang Sandi Login</label></td>
+				<td>:</td>
+				<td><input type="password" name="ulang_password" id="ulang_password"></td>
+			</tr>
+
+			<tr>
+				<td>
+					<button type="submit" value="Simpan">Simpan</button>
+					<button type="cancel" value="Batal">Batal</button>
+					<button onclick="myFunction()">Peringatan</button>
+					<script>
+						function myFunction() {
+			  				alert("Peringatan!");
+						}
+					</script>
+				</td>
+			</tr>
+
+		</table>
+
+	</form>
+
+</body>
+</html>
